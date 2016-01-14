@@ -11,22 +11,10 @@
 $ make
 ```
 
-### 2. docker build
-
-```
-$ make docker-build
-```
-
-### 3. docker push
+### 2. docker push
 
 ```
 $ make docker-push
-```
-
-### 4. clean
-
-```
-$ make clean
 ```
 
 ## Running
@@ -41,6 +29,6 @@ $ bigdatakit <command> [options]
 
 ```
 $ docker run --rm --net=host -v /root/ugi_config:/root/ugi_config \
-    registry.docker.dev.sogou-inc.com:5000/bigdatakit-app/<artifactId>:<version> \
+    registry.docker.dev.sogou-inc.com:5000/bigdatakitapp/<artifactId>:<version> \
     bigdatakit <command> [options]
 ```

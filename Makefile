@@ -1,7 +1,7 @@
 PROJECT_NAME=$(shell cat pom.xml  | grep '<artifactId>' | head -n 1 | awk -F'<artifactId>' '{print $$2}' | awk -F'</artifactId>' '{print $$1}')
 PROJECT_VERSION=$(shell cat pom.xml  | grep '<version>' | head -n 1 | awk -F'<version>' '{print $$2}' | awk -F'</version>' '{print $$1}')
 
-IMAGE_MAIN_NAME='bigdatakit-app/$(PROJECT_NAME)'
+IMAGE_MAIN_NAME='bigdatakitapp/$(PROJECT_NAME)'
 IMAGE_VERSION=$(PROJECT_VERSION)
 IMAGE=$(IMAGE_MAIN_NAME):$(IMAGE_VERSION)
 
